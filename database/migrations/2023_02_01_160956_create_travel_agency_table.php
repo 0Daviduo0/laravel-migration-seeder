@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('package_name', 64);
             $table->text('description');
             $table->integer('price') -> unsigned();
-            $table->string('maximum_people');
+            $table->string('maximum_people', 2);
             $table->date('expiration_date') -> nullable();
             $table->timestamps();
         });

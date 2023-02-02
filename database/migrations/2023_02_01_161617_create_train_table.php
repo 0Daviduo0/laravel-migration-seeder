@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('train', function (Blueprint $table) {
             $table->id();
-            $table->string('brand');
+            $table->string('brand', 24);
             $table->date('manifacture_date') -> nullable();
             $table->string('recognition_number', 15) -> unique();
             $table->string('platform_number', 2);
