@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('price') -> unsigned();
             $table->string('maximum_people', 2);
             $table->date('expiration_date') -> nullable();
+            $table->datetime('start_date');
+            $table->datetime('end_date');
             $table->timestamps();
         });
     }
